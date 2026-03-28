@@ -1,0 +1,9 @@
+[project]
+name = "ai-trip-planner"
+version = "0.1.0"
+description = "AI-based agentic trip planner using LangGraph, FastAPI, and Streamlit with budget-aware itinerary generation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.3.0",
+]
