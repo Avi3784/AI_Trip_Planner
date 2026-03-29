@@ -2,7 +2,7 @@
 
 An AI travel planning system that uses a LangGraph multi-agent workflow to generate complete itineraries with cost estimates, weather context, and practical travel recommendations.
 
-## Resume-Ready Project Summary
+## Project Summary
 
 - Designed a modular multi-agent workflow in LangGraph with four tool groups: weather, place search, expense calculator, and currency conversion.
 - Built a FastAPI backend and Streamlit frontend to collect traveler inputs and generate structured, budget-aware trip plans.
@@ -124,6 +124,11 @@ streamlit run streamlit_app.py
 Frontend: http://localhost:8501
 Backend docs: http://127.0.0.1:8000/docs
 
+### 6. One line Command to run both frontend and backend at the same time
+
+```bash
+.venv\Scripts\python.exe -m uvicorn main:app --reload --port 8000 & .venv\Scripts\python.exe -m streamlit run streamlit_app.py
+```
 ## API Contract
 
 POST /query accepts:
